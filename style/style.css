@@ -49,18 +49,18 @@ body {
     
             li {
                 list-style-type: none;
-    
-                a {
-                    text-decoration: none;
-                    color: white;
-                    font-weight: bold;
-                }
-
-                a:hover {
-                    color: #EAD8C0;
-                }
             }
         }
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: #EAD8C0;
     }
 
     .text-div {
@@ -460,7 +460,7 @@ footer {
     .head {
         background-image: none;
         height: 6rem;
-        margin-bottom: 6rem;
+        margin-bottom: 3rem;
 
         h1 {
             font-size: 40px;
@@ -471,6 +471,18 @@ footer {
             justify-content: space-evenly;
             display: flex;
             flex-wrap: wrap;
+        }
+
+        .nav-bar ul li:first-child {
+            display: none;
+        }
+
+        .nav-bar ul li a {
+            color: #EAD8C0;
+        }
+
+        .nav-bar ul li a:hover {
+            color: white;
         }
 
         .head-div {
