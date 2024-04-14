@@ -440,15 +440,40 @@ footer {
 
 @media screen and (max-width: 576px) {
 
-    body {
-        width: 57.9rem;
+    p {
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 100%; 
+        height: auto;
+    }
+    
+    body, main, footer {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
     }
 
     .head {
         background-image: none;
         height: 6rem;
-        margin-bottom: 50px;
-  
+        margin-bottom: 6rem;
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .nav-bar ul {
+            gap: 10px;
+            justify-content: space-evenly;
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid;
+        }
+
         .head-div {
             display: flex;
             flex-direction: column;
@@ -457,8 +482,7 @@ footer {
         }
 
         .text-div {
-            visibility: hidden;
-            height: 0;
+            display: none;
         }
     }
 
@@ -473,18 +497,36 @@ footer {
     #story {
         width: 100%;
         padding: 0 30px;
+        position: relative;
+        border: 2px solid;
         
+        .menu-box {
+            width: 90%;
+        }
+
         .story-main {
             display: flex;
             flex-direction: column;
         }
     }
 
+    #collection {
+        max-width: 100%;
+        margin: 0 20px;
+    }
+
     footer {
+        width: 100%;
+        margin-top: 3rem;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
         padding: 40px 10px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
 
         .desc {
             display: flex;
@@ -493,9 +535,7 @@ footer {
         }
 
         .maps iframe {
-            width: 350px;
-            height: 300px;
-            border-radius: 20px;
+            max-width: 100%;
         }
     }
 }
