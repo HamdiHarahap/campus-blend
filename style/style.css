@@ -438,7 +438,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
 
     p {
         font-size: 14px;
@@ -500,6 +500,113 @@ footer {
     .over {
         display: none;
     }
+
+    .overlay {
+        display: none;
+    }
+
+    #story {
+        width: 100%;
+        padding: 0 30px;
+        position: relative;
+        
+        .menu-box {
+            width: 90%;
+        }
+
+        .story-main {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    #collection {
+        max-width: 100%;
+        margin: 0 20px;
+    }
+
+    footer {
+        width: 100%;
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 10px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .desc {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .maps iframe {
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    p {
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 100%; 
+        height: auto;
+    }
+    
+    body, main, footer {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .head {
+        height: 100vh;
+        margin-bottom: 3rem;
+        gap: 5rem;
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .nav-bar ul {
+            gap: 10px;
+            justify-content: space-evenly;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .nav-bar ul li a {
+            color: #EAD8C0;
+        }
+
+        .nav-bar ul li a:hover {
+            color: white;
+        }
+
+        .head-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .text-div {
+            width: 100%;
+            margin: 0;
+            padding-left: 28rem;
+        }
+    }
+
 
     .overlay {
         display: none;
