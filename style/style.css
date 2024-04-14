@@ -471,7 +471,6 @@ footer {
             justify-content: space-evenly;
             display: flex;
             flex-wrap: wrap;
-            border: 2px solid;
         }
 
         .head-div {
@@ -498,7 +497,6 @@ footer {
         width: 100%;
         padding: 0 30px;
         position: relative;
-        border: 2px solid;
         
         .menu-box {
             width: 90%;
