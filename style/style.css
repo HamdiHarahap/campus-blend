@@ -358,10 +358,6 @@ section {
     
 }
 
-.hidden-img {
-    display: none;
-}
-
 .content-e {
     transition: transform 0.3s ease;
 }
