@@ -452,10 +452,6 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-    p {
-        font-size: 14px;
-    }
-
     img {
         max-width: 100%; 
         height: auto;
@@ -476,6 +472,7 @@ footer {
 
         .nav-bar ul li a {
             color: #000;
+            font-size: 18px;
         }
 
         .head-div {
