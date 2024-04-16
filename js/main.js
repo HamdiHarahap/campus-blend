@@ -17,6 +17,6 @@ const contents = document.querySelectorAll('.menu-box');
 
 contents.forEach(content => {
     content.addEventListener('mouseenter', function () {
-        this.classList.add('content-e');
+        this.classList.add('content-e')
     });
 });
