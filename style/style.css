@@ -640,6 +640,10 @@ footer {
         width: auto;
     }
 
+    .over {
+        height: 110px;
+    }
+
     .overlay {
         display: none;
     }
@@ -686,5 +690,28 @@ footer {
         .maps iframe {
             max-width: 100%;
         }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .head {
+        gap: 12rem;
+    }
+
+    img {
+        max-width: 554px;
+    }
+
+    .over {
+        height: 110px;
+    }
+
+    .overlay {
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 400px;
     }
 }
