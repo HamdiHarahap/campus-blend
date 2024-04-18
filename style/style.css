@@ -696,22 +696,10 @@ footer {
 @media screen and (min-width: 1024px) {
 
     .head {
-        gap: 12rem;
+        gap: 10rem;
     }
 
-    img {
-        max-width: 554px;
-    }
-
-    .over {
-        height: 110px;
-    }
-
-    .overlay {
-        right: 0;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        width: 400px;
+    #story img {
+        width: 554px;
     }
 }
