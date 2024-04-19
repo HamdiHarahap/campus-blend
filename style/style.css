@@ -13,7 +13,7 @@ body {
     color: #fff;
 }
 
-.head {
+#home {
     height: 100vh;
     background-image: url(../assets/image/cofee.jpg);
     background-size: cover;
@@ -93,7 +93,7 @@ body {
     width: 0;
 }
 
-.over {
+.overlay-bot {
     position: absolute;
     top: 87%;
     left: 0;
@@ -457,7 +457,7 @@ footer {
         height: auto;
     }
     
-    .head {
+    #home {
         background-image: none;
         height: 6rem;
         margin-bottom: 3rem;
@@ -487,14 +487,14 @@ footer {
         }
     }
 
-    .head .nav-bar {
+    #home .nav-bar {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
 
-    .head .nav-bar ul {
+    #home .nav-bar ul {
         visibility: hidden;
         gap: 10px;
         justify-content: space-evenly;
@@ -505,7 +505,7 @@ footer {
         flex-wrap: wrap;
     }
 
-    .head .nav-bar .icon {
+    #home .nav-bar .icon {
         display: flex;
         background-color: #EAD8C0;
         color: #000;
@@ -514,12 +514,12 @@ footer {
         bottom: 20px;
     }
 
-    .head .menu-icon {
+    #home .menu-icon {
         visibility: visible;
         width: auto;
     }
 
-    .over {
+    .overlay-bot {
         display: none;
     }
 
@@ -578,7 +578,7 @@ footer {
         height: auto;
     }
     
-    .head {
+    #home {
         height: 100vh;
         margin-bottom: 3rem;
         gap: 5rem;
@@ -610,7 +610,7 @@ footer {
         }
     }
 
-    .head .nav-bar ul {
+    #home .nav-bar ul {
         padding: 20px;
         gap: 10px;
         justify-content: flex-start;
@@ -627,7 +627,7 @@ footer {
         border-radius: 20px;
     }
 
-    .head .nav-bar .icon {
+    #home .nav-bar .icon {
         display: flex;
         background-color: #EAD8C0;
         color: #000;
@@ -635,12 +635,12 @@ footer {
         border-radius: 10px;
     }
 
-    .head .menu-icon {
+    #home .menu-icon {
         visibility: visible;
         width: auto;
     }
 
-    .over {
+    .overlay-bot {
         height: 110px;
     }
 
@@ -695,7 +695,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
 
-    .head {
+    #home {
         gap: 10rem;
     }
 
