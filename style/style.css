@@ -23,11 +23,11 @@ body {
     gap: 10rem;
     padding-top: 10px;
 
-    .head-div {
+    .head-nav {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        gap: 20rem;
+        gap: 18rem;
         align-items: center;
         
         div {
@@ -462,7 +462,7 @@ footer {
             font-size: 18px;
         }
 
-        .head-div {
+        .head-nav {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -589,7 +589,7 @@ footer {
             color: white;
         }
 
-        .head-div {
+        .head-nav {
             padding: 0 5rem;
             display: flex;
             flex-direction: row;
