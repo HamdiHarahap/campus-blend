@@ -38,6 +38,8 @@ body {
         .title {
             font-size: 1.5rem;
             color: #EAD8C0;
+            padding: 0 10px;
+            background-color: #000;
         }
     
         .nav-bar ul {
