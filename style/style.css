@@ -449,10 +449,15 @@ footer {
     #home {
         background-image: none;
         height: 6rem;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
 
         h1 {
-            font-size: 40px;
+            font-size: 30px;
+            display: none;
+        }
+
+        img {
+            width: 45px;
         }
 
         .nav-bar ul li:first-child {
@@ -466,8 +471,9 @@ footer {
 
         .head-nav {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: space-between;
             gap: 15px;
         }
 
@@ -479,28 +485,30 @@ footer {
     #home .nav-bar {
         display: flex;
         flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 60%;
     }
 
-    #home .nav-bar ul {
+    #home .head-nav .nav-bar ul {
         visibility: hidden;
-        gap: 10px;
-        justify-content: space-evenly;
-        background-color: #EAD8C0;
-        padding: 10px;
-        border-radius: 20px;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: #fff;
+        border-radius: 20px 0 0 20px;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0 5rem 5px;
+        z-index: 1;
     }
 
     #home .nav-bar .icon {
         display: flex;
-        background-color: #EAD8C0;
-        color: #000;
+        color: #EAD8C0;
         width: 1.8rem;
-        border-radius: 10px;
-        bottom: 20px;
+        margin-right: 10px;
     }
 
     #home .menu-icon {
@@ -520,6 +528,14 @@ footer {
             display: flex;
             flex-direction: column;
         }
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    #story .story-main div p {
+        font-size: 18px;
     }
 
     .story-main div:first-child {
@@ -540,6 +556,14 @@ footer {
     #collection {
         max-width: 100%;
         margin: 0 20px;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 18px;
+        }
     }
 
     footer {
@@ -589,6 +613,10 @@ footer {
 
         .nav-bar ul li a:hover {
             color: white;
+        }
+
+        img {
+            display: none;
         }
 
         .head-nav {
@@ -700,6 +728,10 @@ footer {
 
     #home {
         gap: 10rem;
+
+        img {
+            display: none;
+        }
     }
 
     #story img {
