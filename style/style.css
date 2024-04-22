@@ -120,13 +120,18 @@ main {
         position: relative;
 
         img {
-            width: 550px;
+            width: 555px;
             border-radius: 20px;
         }
 
         p {
             font-size: 20px;
             line-height: 30px;
+        }
+
+        a {
+            color: #EAD8C0;
+            text-decoration: none;
         }
     }
 }
