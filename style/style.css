@@ -39,7 +39,6 @@ body {
             font-size: 1.5rem;
             color: #EAD8C0;
             padding: 0 10px;
-            background-color: #000;
         }
     
         .nav-bar ul {
@@ -447,12 +446,12 @@ footer {
     }
     
     #home {
-        margin-top: 1rem;
-        background-image: none;
-        height: 6rem;
+        height: 100vh;
         margin-bottom: 1rem;
+        background-image: url(/assets/Image/bgcoffee.jpg);
+        gap: 0;
 
-        h1 {
+        .title h1 {
             font-size: 30px;
             display: none;
         }
@@ -475,8 +474,29 @@ footer {
         }
 
         .text-div {
-            display: none;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            top: 40%;
+            padding: 0 8px;
+
+            h1 {
+                font-size: 35px;
+            }
+
+            p {
+                font-size: 25px;
+            }
         }
+    }
+
+    #home .head-nav .title {
+        background-color: none;
     }
 
     #home .nav-bar {
@@ -729,6 +749,10 @@ footer {
         img {
             display: none;
         }
+    }
+
+    #home .head-nav .title {
+        background-color: #000;
     }
 
     #story img {
