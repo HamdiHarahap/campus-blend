@@ -461,10 +461,6 @@ footer {
             width: 6rem;
         }
 
-        .nav-bar ul li:first-child {
-            display: none;
-        }
-
         .nav-bar ul li a {
             color: #000;
             font-size: 18px;
@@ -488,12 +484,12 @@ footer {
         flex-direction: column-reverse;
         justify-content: flex-end;
         align-items: flex-end;
-        width: 60%;
+        width: 70%;
     }
 
     #home .head-nav .nav-bar ul {
         visibility: hidden;
-        gap: 20px;
+        gap: 50px;
         justify-content: flex-start;
         align-items: flex-start;
         background-color: #F0EBE3;
