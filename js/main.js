@@ -20,6 +20,8 @@ const navMenu = document.querySelector('.nav-bar ul')
 const navClose = document.querySelector('.close-icon')
 
 menuIcon.addEventListener('click', function () {
+    navMenu.classList.toggle('slide-in');
+    navMenu.classList.remove('slide-back');
     navMenu.style.visibility = 'visible'
     navMenu.style.height = 'auto'
     menuIcon.style.visibility = 'hidden'
@@ -29,6 +31,8 @@ menuIcon.addEventListener('click', function () {
 })
 
 navClose.addEventListener('click', function () {
+    navMenu.classList.add('slide-back');
+    navMenu.classList.remove('slide-in');
     navMenu.style.visibility = 'hidden'
     menuIcon.style.visibility = 'visible'
     menuIcon.style.width = 'auto'

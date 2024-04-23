@@ -499,6 +499,19 @@ footer {
         background-color: none;
     }
 
+    .slide-in {
+        visibility: visible;
+        height: auto;
+        transition: transform 0.3s ease-in;
+        transform: translateX(0);
+    }   
+    
+    .slide-back {
+        visibility: hidden;
+        height: 0;
+        transform: translateX(101%);
+    }
+
     #home .nav-bar {
         display: flex;
         flex-direction: column-reverse;
