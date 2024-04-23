@@ -519,6 +519,7 @@ footer {
         align-items: flex-end;
         width: 75%;
         height: 100vh;
+        overflow-x: hidden;
     }
 
     #home .head-nav .nav-bar ul {
