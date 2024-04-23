@@ -457,7 +457,7 @@ footer {
         }
 
         img {
-            width: 6rem;
+            width: 5rem;
         }
 
         .nav-bar ul li a {
@@ -505,6 +505,7 @@ footer {
         justify-content: flex-end;
         align-items: flex-end;
         width: 75%;
+        height: 100vh;
     }
 
     #home .head-nav .nav-bar ul {
@@ -516,12 +517,12 @@ footer {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 3rem 0;
+        padding: 4rem 0 15rem;
         z-index: 1;
     }
 
     #home .nav-bar .icon {
-        margin-top: 2.5rem;
+        margin-top: 2rem;
         display: flex;
         color: #EAD8C0;
         width: 1.8rem;
