@@ -40,7 +40,6 @@ navClose.addEventListener('click', function () {
     navClose.style.width = '0'
 })
 
-
 const contents = document.querySelectorAll('.menu-box');
 
 contents.forEach((content) => {
