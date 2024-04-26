@@ -435,7 +435,7 @@ footer {
         transform: translateX(0);
     }   
     
-    .slide-back {
+    .slide {
         visibility: hidden;
         height: 0;
         transform: translateX(101%);
