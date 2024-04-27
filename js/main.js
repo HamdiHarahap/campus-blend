@@ -16,28 +16,41 @@ drinkButton[1].addEventListener('click', function() {
 })
 
 const menuIcon = document.querySelector('.menu-icon')
-const navMenu = document.querySelector('.nav-bar ul')
-const navClose = document.querySelector('.close-icon')
+const menuList = document.querySelector('.nav-bar ul')
+const closeIcon = document.querySelector('.close-icon')
 
 menuIcon.addEventListener('click', function () {
-    navMenu.classList.toggle('slide-in');
-    navMenu.classList.remove('slide');
-    navMenu.style.visibility = 'visible'
-    navMenu.style.height = 'auto'
+    menuList.classList.toggle('slide-in');
+    menuList.classList.remove('slide');
+    menuList.style.visibility = 'visible'
+    menuList.style.height = 'auto'
     menuIcon.style.visibility = 'hidden'
     menuIcon.style.width = '0'
-    navClose.style.visibility = 'visible'
-    navClose.style.width = 'auto'
+    closeIcon.style.visibility = 'visible'
+    closeIcon.style.width = 'auto'
 })
 
-navClose.addEventListener('click', function () {
-    navMenu.classList.add('slide');
-    navMenu.classList.remove('slide-in');
-    navMenu.style.visibility = 'hidden'
+closeIcon.addEventListener('click', function () {
+    menuList.classList.toggle('slide');
+    menuList.classList.remove('slide-in');
+    menuList.style.visibility = 'hidden'
     menuIcon.style.visibility = 'visible'
     menuIcon.style.width = 'auto'
-    navClose.style.visibility = 'hidden'
-    navClose.style.width = '0'
+    closeIcon.style.visibility = 'hidden'
+    closeIcon.style.width = '0'
+})
+
+const navigations = document.querySelectorAll('.navigasi')
+
+navigations.forEach((navigation) => {
+    navigation.addEventListener('click', function () {
+        menuList.classList.toggle('slide');
+        menuList.classList.remove('slide-in');
+        menuIcon.style.visibility = 'visible';
+        menuIcon.style.width = 'auto';
+        closeIcon.style.visibility = 'hidden';
+        closeIcon.style.width = '0'; 
+    })
 })
 
 const contents = document.querySelectorAll('.menu-box');
