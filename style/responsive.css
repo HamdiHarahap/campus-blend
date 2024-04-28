@@ -60,15 +60,11 @@
     }
 
     .slide-in {
-        visibility: visible;
-        height: auto;
         transition: transform 0.3s ease-in;
         transform: translateX(0);
     }   
     
     .slide {
-        visibility: hidden;
-        height: 0;
         transform: translateX(101%);
     }
 

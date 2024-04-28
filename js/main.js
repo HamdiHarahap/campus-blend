@@ -40,7 +40,7 @@ closeIcon.addEventListener('click', function () {
     closeIcon.style.width = '0'
 })
 
-const navigations = document.querySelectorAll('.navigasi')
+const navigations = document.querySelectorAll('.navigation')
 
 navigations.forEach((navigation) => {
     navigation.addEventListener('click', function () {
