@@ -22,7 +22,30 @@
 
         .nav-bar ul li a {
             color: #000;
+            font-size: 20px;
+        }
+
+        .dropdown-btn {
+            display: none;
+        }
+
+        .dropdown-content {
+            visibility: visible;
+            display: flex;
+            flex-direction: column;
             font-size: 18px;
+            background-color: #F0EBE3;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        #home .dropdown-content a:hover {
+            background-color: none;
+        }
+
+        .down, .up {
+            display: none;
         }
 
         .head-nav {
@@ -30,6 +53,7 @@
             flex-direction: row;
             align-items: flex-start;
             justify-content: space-between;
+            height: 100vh;
             gap: 15px;
         }
 
@@ -75,6 +99,7 @@
         align-items: flex-end;
         width: 75%;
         height: 100vh;
+        border: 2px solid;
         overflow-x: hidden;
     }
 
@@ -87,7 +112,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 4rem 0 15rem;
+        padding: 4rem 0 25rem;
         z-index: 1;
     }
 
@@ -313,7 +338,7 @@
 @media screen and (min-width: 1024px) {
 
     #home {
-        gap: 10rem;
+        gap: 8rem;
 
         img {
             display: none;

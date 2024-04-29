@@ -28,19 +28,15 @@ body {
         flex-direction: row;
         justify-content: space-around;
         gap: 18rem;
-        align-items: center;
-        
-        div {
-            padding: 3px;
-            border-radius: 20px;
-        }
+        align-items: baseline;
 
         .title {
+            border-radius: 20px;
             font-size: 2rem;
             color: #EAD8C0;
             padding: 0 10px;
         }
-    
+
         .nav-bar ul {
             display: flex;
             flex-direction: row;
@@ -59,7 +55,7 @@ body {
         font-weight: bold;
     }
 
-    a:hover {
+    a:hover, li:hover {
         color: #EAD8C0;
     }
 
@@ -75,6 +71,44 @@ body {
             font-size: 30px;
         }
     }
+}
+
+.drop-icon {
+    display: flex;
+    align-items: center;
+}
+
+.down {
+    display: flex;
+}
+
+.up {
+   display: none;
+}
+
+.dropdown-btn {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #A79277;
+}
+
+#home .dropdown-content a {
+    padding: 10px 5px;
+}
+
+#home .dropdown-content a:hover {
+    background-color: #000;
 }
 
 .icon {

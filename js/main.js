@@ -1,5 +1,22 @@
 feather.replace();
 
+const dropButton = document.querySelector('.dropdown-btn')
+const dropContent = document.querySelector('.dropdown-content')
+const up = document.querySelector('.up')
+const down = document.querySelector('.down')
+
+dropButton.addEventListener('click', function () {
+    if (dropContent.style.visibility === 'visible') {
+        dropContent.style.visibility = 'hidden'
+        down.style.display = 'flex'
+        up. style.display = 'none'
+    } else {
+        dropContent.style.visibility = 'visible'
+        down.style.display = 'none'
+        up. style.display = 'flex'
+    }
+})
+
 const foodButton = document.getElementsByClassName('food')
 const drinkButton = document.getElementsByClassName('drink')
 const drink = document.querySelector('.collection-drink')
