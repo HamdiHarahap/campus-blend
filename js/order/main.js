@@ -35,6 +35,6 @@ availables.forEach((available) => {
             title: "Good job!",
             text: "item added successfully!",
             icon: "success"
-          });
+        });
     })
 })
