@@ -30,6 +30,10 @@ body {
     font-weight: bold;
 }
 
+.back-btn a:hover {
+    color: #F1E4C3;
+}
+
 .confirm {
     cursor: pointer;
     display: flex;
