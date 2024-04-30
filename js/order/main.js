@@ -23,7 +23,7 @@ solds.forEach((sold) => {
             icon: "error",
             title: "Oops...",
             text: "item not available!",
-          });
+        });
     })
 })
 
