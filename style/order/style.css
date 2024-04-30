@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Tilt Neon", sans-serif;
+    background-image: url(/assets/Image/bgorder.jpg);
+    background-repeat: no-repeat;
+    background-color: #000;
+    color: #fff;
+}
+
+.nav-bar {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.back-btn a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.confirm {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.collection-drink, .collection-food {
+    margin-top: 50px;
+    padding-bottom: 30px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #272829;
+    width: 95%;
+    border-radius: 20px;
+
+    .title-coll {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 20px 0;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            gap: 20px;
+            font-size: 20px;
+
+            li {
+                padding: 5px 9px;
+                background-color: #F1E4C3;
+                border-radius: 20px;
+                transition: transform 0.3s ease;
+            }
+
+            li:hover {
+                transform: scale(1.2);
+            }
+
+            a {
+                text-decoration: none;
+                color: #000;
+                font-weight: bold;
+            }
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+        }
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 0 50px;
+    }
+}
+
+.collection-food {
+    display: none;
+}
+
+.collection-drink ul li:first-child, 
+.collection-food ul li:last-child {
+    background-color: #0C0C0C;
+
+    a {
+        color: #fff;
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+    cursor: pointer;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding: 16px 16px 20px 16px;
+
+        i {
+            color: #000;
+        }
+    
+        img {
+            border-radius: 15px;
+        }
+
+        h1 {
+            margin-bottom: 6px;
+            font-size: 18px;
+        }
+    
+        p {
+            font-size: 14px;
+            color: #6C727F;
+        }
+    
+        .tag {
+            color: #883AE1;
+            background-color: #E6D6FC;
+            font-weight: bold;
+            width: 4.5rem;
+            height: 1.5rem;
+            text-align: center;
+            margin: 16px 0;
+            border-radius: 15px;
+            font-size: 10px;
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+        }
+    }
+
+    hr {
+        border-color: #E5EAF0;
+        opacity: 0.5;
+        color: #20293A;
+    }
+
+    .author {
+        padding: 20px 16px 20px 16px;
+        font-size: 12px;
+        color: #6C727F;
+        display: flex;
+        justify-content: space-between;
+
+        span:nth-child(1) {
+            font-weight: bold;
+        }
+    }
+    
+}
+
+.preview {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    font-weight: bold;
+}
+
+.menu .menu-box .content .preview p:first-child {
+    color: #FEFBF6;
+}
+
+.status {
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.sold {
+    background-color: #FE0000;
+}
+
+.ready {
+    background-color: #3081D0;
+}
