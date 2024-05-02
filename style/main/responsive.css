@@ -337,7 +337,7 @@
 @media screen and (min-width: 1024px) {
 
     #home {
-        gap: 8rem;
+        gap: 7rem;
 
         img {
             display: none;
