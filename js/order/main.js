@@ -38,3 +38,11 @@ availables.forEach((available) => {
         });
     })
 })
+
+const contents = document.querySelectorAll('.menu-box');
+
+contents.forEach((content) => {
+    content.addEventListener('mouseenter', function () {
+        this.classList.add('show')
+    })
+})

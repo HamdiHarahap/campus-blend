@@ -191,6 +191,14 @@ section {
     
 }
 
+.show {
+    transition: transform 0.3s ease;
+}
+
+.show:hover {
+    transform: scale(0.9);
+}
+
 .preview {
     display: flex;
     align-items: center;
