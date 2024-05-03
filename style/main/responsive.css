@@ -10,73 +10,73 @@
         margin-bottom: 1rem;
         background-image: url(/assets/Image/bgcoffee.jpg);
         gap: 0;
+    }
 
-        .title h1 {
-            font-size: 30px;
-            display: none;
-        }
+    #home .title h1 {
+        font-size: 30px;
+        display: none;
+    }
 
-        img {
-            width: 5rem;
-        }
+    #home img {
+        width: 5rem;
+    }
 
-        .nav-bar ul li a {
-            color: #000;
-            font-size: 20px;
-        }
+    .nav-bar ul li a {
+        color: #000;
+        font-size: 20px;
+    }
 
-        .dropdown-btn {
-            display: none;
-        }
+    .dropdown-btn {
+        display: none;
+    }
 
-        .dropdown-content {
-            visibility: visible;
-            display: flex;
-            flex-direction: column;
-            font-size: 18px;
-            background-color: #F0EBE3;
-            justify-content: center;
-            align-items: center;
-            gap: 50px;
-        }
+    .dropdown-content {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        background-color: #F0EBE3;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
 
-        #home .dropdown-content a:hover {
-            background-color: none;
-        }
+    #home .dropdown-content a:hover {
+        background-color: none;
+    }
 
-        .down, .up {
-            display: none;
-        }
+    .down, .up {
+        display: none;
+    }
 
-        .head-nav {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: space-between;
-            height: 100vh;
-            gap: 15px;
-        }
+    .head-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 100vh;
+        gap: 15px;
+    }
 
-        .text-div {
-            width: 100%;
-            margin: 0;
-            display: flex;
-            gap: 20px;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            position: absolute;
-            top: 40%;
-            padding: 0 8px;
+    .text-div {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        top: 40%;
+        padding: 0 8px;
+    }
 
-            h1 {
-                font-size: 35px;
-            }
+    .text-div h1 {
+        font-size: 35px;
+    }
 
-            p {
-                font-size: 25px;
-            }
-        }
+    .text-div p {
+        font-size: 25px;
     }
 
     #home .head-nav .title {
@@ -131,19 +131,19 @@
     #story {
         width: 100%;
         padding: 0 30px;
+    }
         
-        .menu-box {
-            width: 90%;
-        }
+    .menu-box {
+        width: 90%;
+    }
 
-        .story-main {
-            display: flex;
-            flex-direction: column;
-        }
+    .story-main {
+        display: flex;
+        flex-direction: column;
+    }
 
-        h1 {
-            font-size: 30px;
-        }
+    #story h1 {
+        font-size: 30px;
     }
 
     #story .story-main div p {
@@ -168,37 +168,38 @@
     #collection {
         max-width: 100%;
         margin: 0 20px;
+    }
 
-        h1 {
-            font-size: 30px;
-        }
+    #collection h1 {
+        font-size: 30px;
+    }
 
-        p {
-            font-size: 18px;
-        }
+    #collection p {
+        font-size: 18px;
     }
 
     footer {
         width: 100%;
         margin-top: 3rem;
         padding: 40px 10px;
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            gap: 3rem;
-        }
-
-        .desc {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        .maps iframe {
-            max-width: 100%;
-        }
     }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .desc {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .maps iframe {
+        max-width: 100%;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
@@ -212,36 +213,36 @@
         height: 100vh;
         margin-bottom: 3rem;
         gap: 5rem;
+    }
 
-        h1 {
-            font-size: 40px;
-        }
+    #home h1 {
+        font-size: 40px;
+    }
 
-        .nav-bar ul li a {
-            color: #EAD8C0;
-        }
+    .nav-bar ul li a {
+        color: #EAD8C0;
+    }
 
-        .nav-bar ul li a:hover {
-            color: white;
-        }
+    .nav-bar ul li a:hover {
+        color: white;
+    }
 
-        img {
-            display: none;
-        }
+    #home img {
+        display: none;
+    }
 
-        .head-nav {
-            padding: 0 5rem;
-            display: flex;
-            flex-direction: row;
-            align-items: baseline;
-            justify-content: space-between;
-        }
+    .head-nav {
+        padding: 0 5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
 
-        .text-div {
-            width: 100%;
-            margin: 0;
-            padding-left: 28rem;
-        }
+    .text-div {
+        width: 100%;
+        margin: 0;
+        padding-left: 28rem;
     }
 
     #home .nav-bar ul {
@@ -278,15 +279,15 @@
         width: 100%;
         padding: 0 30px;
         position: relative;
+    }
         
-        .menu-box {
-            width: 90%;
-        }
+    .menu-box {
+        width: 90%;
+    }
 
-        .story-main {
-            display: flex;
-            flex-direction: column;
-        }
+    .story-main {
+        display: flex;
+        flex-direction: column;
     }
 
     .story-main div:first-child {
@@ -315,22 +316,22 @@
         display: flex;
         flex-direction: column;
         padding: 40px 10px;
+    }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            gap: 3rem;
-        }
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
 
-        .desc {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
+    .desc {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
 
-        .maps iframe {
-            max-width: 100%;
-        }
+    .maps iframe {
+        max-width: 100%;
     }
 }
 
@@ -338,10 +339,10 @@
 
     #home {
         gap: 7rem;
+    }
 
-        img {
-            display: none;
-        }
+    #home img {
+        display: none;
     }
 
     #home .head-nav .title {
