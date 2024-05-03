@@ -179,6 +179,10 @@
         font-size: 18px;
     }
 
+    .menu {
+        padding: 0;
+    }
+
     footer {
         width: 100%;
         margin-top: 3rem;
@@ -215,5 +219,9 @@
 
     #story img {
         max-width: 554px;
+    }
+
+    .collection-drink, .collection-food {
+        width: 95%;
     }
 }
