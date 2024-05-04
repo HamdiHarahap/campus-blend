@@ -196,7 +196,7 @@ section hr {
 }
 
 .show:hover {
-    transform: scale(0.9);
+    transform: scale(105%);
 }
 
 .preview {
