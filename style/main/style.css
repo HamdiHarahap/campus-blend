@@ -66,10 +66,6 @@ a {
     transition: width 0.3s ease;
 }
 
-/* .list:hover {
-    width: 100%;
-} */
-
 .slide a:hover, .slide li:hover {
     color: #EAD8C0;
 }
