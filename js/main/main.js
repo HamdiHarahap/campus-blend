@@ -57,9 +57,10 @@ closeIcon.addEventListener('click', function () {
     closeIcon.style.width = '0'
 })
 
-const navigations = document.querySelectorAll('.navigation')
+const navigations = document.querySelectorAll('.navigation');
+const horizontals = document.querySelectorAll('.hr');
 
-navigations.forEach((navigation) => {
+navigations.forEach((navigation, i) => {
     navigation.addEventListener('click', function () {
         menuList.classList.toggle('slide');
         menuList.classList.remove('slide-in');
@@ -67,8 +68,17 @@ navigations.forEach((navigation) => {
         menuIcon.style.width = 'auto';
         closeIcon.style.visibility = 'hidden';
         closeIcon.style.width = '0'; 
-    })
-})
+    });
+
+    navigation.addEventListener('mouseenter', function () {
+        horizontals[i].style.width = '100%';
+    });
+
+    navigation.addEventListener('mouseleave', function () {
+        horizontals[i].style.width = '0';
+    });
+});
+
 
 const contents = document.querySelectorAll('.menu-box');
 

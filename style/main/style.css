@@ -58,6 +58,18 @@ a {
     font-weight: bold;
 }
 
+.slide .hr {
+    background-color: white;
+    border: none;
+    width: 0;
+    height: 2px;
+    transition: width 0.3s ease;
+}
+
+/* .list:hover {
+    width: 100%;
+} */
+
 .slide a:hover, .slide li:hover {
     color: #EAD8C0;
 }
