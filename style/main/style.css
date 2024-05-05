@@ -89,11 +89,11 @@ a {
 }
 
 .down {
-    display: flex;
+    display: none;
 }
 
 .up {
-   display: none;
+   display: flex;
 }
 
 .dropdown-btn {

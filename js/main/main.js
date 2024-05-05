@@ -6,14 +6,14 @@ const up = document.querySelector('.up')
 const down = document.querySelector('.down')
 
 dropButton.addEventListener('click', function () {
-    if (dropContent.style.visibility === 'visible') {
+    if (dropContent.style.visibility == 'visible') {
         dropContent.style.visibility = 'hidden'
-        down.style.display = 'flex'
-        up. style.display = 'none'
-    } else {
-        dropContent.style.visibility = 'visible'
         down.style.display = 'none'
         up. style.display = 'flex'
+    } else {
+        dropContent.style.visibility = 'visible'
+        down.style.display = 'flex'
+        up. style.display = 'none'
     }
 })
 
