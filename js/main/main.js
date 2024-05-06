@@ -58,9 +58,8 @@ closeIcon.addEventListener('click', function () {
 })
 
 const navigations = document.querySelectorAll('.navigation');
-const horizontals = document.querySelectorAll('.hr');
 
-navigations.forEach((navigation, i) => {
+navigations.forEach((navigation) => {
     navigation.addEventListener('click', function () {
         menuList.classList.toggle('slide');
         menuList.classList.remove('slide-in');
@@ -69,15 +68,20 @@ navigations.forEach((navigation, i) => {
         closeIcon.style.visibility = 'hidden';
         closeIcon.style.width = '0'; 
     });
-
-    navigation.addEventListener('mouseenter', function () {
-        horizontals[i].style.width = '100%';
-    });
-
-    navigation.addEventListener('mouseleave', function () {
-        horizontals[i].style.width = '0';
-    });
 });
+
+const lists = document.querySelectorAll('.list');
+const horizontals = document.querySelectorAll('.hr')
+
+lists.forEach((list, i) => {
+    list.addEventListener('mouseenter', function () {
+        horizontals[i].style.width = '100%'
+    }) 
+
+    list.addEventListener('mouseleave', function () {
+        horizontals[i].style.width = '0'
+    })
+})
 
 
 const contents = document.querySelectorAll('.menu-box');
