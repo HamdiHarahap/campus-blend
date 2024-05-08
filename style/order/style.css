@@ -15,6 +15,10 @@ body {
     color: #fff;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .nav-bar {
     padding: 20px 0;
     display: flex;
