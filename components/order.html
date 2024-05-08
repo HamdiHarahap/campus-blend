@@ -3,105 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CampusBlend</title>
+    <title>Order | CampusBlend</title>
+    <link rel="stylesheet" href="/style/order/style.css" />
     <link rel="icon" href="/assets/Logo/icon.png" />
-    <link rel="stylesheet" href="style/main/style.css" />
-    <link rel="stylesheet" href="style/main/responsive.css" />
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
-    <header id="home">
-      <nav class="head-nav">
-        <div>
-          <div class="title">
-            <h1>CampusBlend</h1>
-            <img src="/assets/Logo/icon.png" alt="logo" />
-          </div>
+    <header>
+      <nav class="nav-bar">
+        <div class="back-btn">
+          <a href="/index.html"><i data-feather="chevron-left"></i>Back</a>
         </div>
-        <div class="nav-bar">
-          <ul class="slide">
-            <li>
-              <a href="#home" class="list">Home</a>
-              <div class="hr"></div>
-            </li>
-            <li>
-              <a href="#story" class="list">Story</a>
-              <div class="hr"></div>
-            </li>
-            <li>
-              <a href="#collection" class="list">Collection</a>
-              <div class="hr"></div>
-            </li>
-            <li>
-              <div class="dropdown">
-                <div class="dropdown-btn">
-                  <div>
-                    <p class="list">About</p>
-                    <div class="hr"></div>
-                  </div>
-                  <div class="drop-icon">
-                    <i data-feather="chevron-down" class="down"></i>
-                    <i data-feather="chevron-up" class="up"></i>
-                  </div>
-                </div>
-                <div class="dropdown-content">
-                  <a href="#information" class="navigation">Contact</a>
-                  <a href="components/order.html" class="navigation">Order</a>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div class="icon">
-            <i data-feather="menu" class="menu-icon"></i>
-            <i data-feather="x" class="close-icon"></i>
+        <div class="confirm">
+          <div>
+            <p><i data-feather="shopping-cart"></i></p>
           </div>
         </div>
       </nav>
-      <div class="text-div">
-        <h1>Welcome to Our Coffee Shop</h1>
-        <p>
-          Explore our finest selection <br />
-          of coffee blends
-        </p>
-      </div>
     </header>
     <main>
-      <article id="story">
-        <div class="story-title">
-          <h1>Our Story</h1>
-        </div>
-        <div class="story-main">
-          <div>
-            <img src="assets/Image/shop2.jpg" class="img-fs" alt="image" />
-            <img src="assets/Image/shop.jpg" class="img-sc" alt="image" />
-          </div>
-          <div>
-            <p>
-              In Politeknik Negeri Medan, Hamdi and his friends established
-              "CampusBlend" Coffee Shop. With its cozy design and diverse coffee
-              menu, the place has become a gathering spot for the entire campus
-              community. CampusBlend is not just a place to enjoy coffee, but
-              also a space for creativity, sharing, and growth. In every cup of
-              coffee, there is a spirit to pursue dreams and inspire one
-              another. It serves as a symbol of unity on campus, spreading the
-              aroma of friendship and the zest for learning in every corner.
-              Through CampusBlend, students and staff can strengthen
-              relationships and foster interdisciplinary collaboration.
-              <a href="#story">Read more...</a>
-            </p>
-          </div>
-        </div>
-      </article>
-      <article id="collection">
+      <article>
         <div class="collection-drink">
           <div class="title-coll">
             <div>
-              <h1>Our Collection</h1>
+              <h1>Order Now</h1>
               <p>
-                Enjoy a touch of our distinctive coffee taste <br />
-                with a combination of delicious food and fresh drinks <br />
-                in our warm and friendly <br />
-                coffee shop.
+                Place your order now and indulge <br />
+                in culinary bliss !
               </p>
             </div>
             <div>
@@ -116,9 +45,14 @@
               <div class="content">
                 <img
                   class="active-img"
-                  src="assets/Image/americano.jpg"
+                  src="/assets/Image/americano.jpg"
                   alt="image"
                 />
+                <br />
+                <div class="preview">
+                  <p class="status sold">sold out</p>
+                  <p><i data-feather="plus-circle" class="out"></i></p>
+                </div>
                 <br />
                 <p>
                   Experience the smooth and rich flavor of our Americano,
@@ -134,7 +68,12 @@
             </section>
             <section class="menu-box">
               <div class="content">
-                <img src="assets/Image/espresso.jpg" alt="image" />
+                <img src="/assets/Image/espresso.jpg" alt="image" />
+                <br />
+                <div class="preview">
+                  <p class="status ready">available</p>
+                  <p><i data-feather="plus-circle" class="available"></i></p>
+                </div>
                 <br />
                 <p>
                   Indulge in the bold flavor of our Espresso, perfect for those
@@ -150,7 +89,12 @@
             </section>
             <section class="menu-box">
               <div class="content">
-                <img src="assets/Image/cappucino.jpg" alt="image" />
+                <img src="/assets/Image/cappucino.jpg" alt="image" />
+                <br />
+                <div class="preview">
+                  <p class="status ready">available</p>
+                  <p><i data-feather="plus-circle" class="available"></i></p>
+                </div>
                 <br />
                 <p>
                   Experience the perfect balance of espresso and steamed milk in
@@ -165,7 +109,12 @@
             </section>
             <section class="menu-box">
               <div class="content">
-                <img src="assets/Image/latte.jpg" alt="image" />
+                <img src="/assets/Image/latte.jpg" alt="image" />
+                <br />
+                <div class="preview">
+                  <p class="status sold">sold out</p>
+                  <p><i data-feather="plus-circle" class="out"></i></p>
+                </div>
                 <br />
                 <p>
                   Experience the perfect balance of espresso and steamed milk in
@@ -180,7 +129,12 @@
             </section>
             <section class="menu-box">
               <div class="content">
-                <img src="assets/Image/tea.jpg" alt="image" />
+                <img src="/assets/Image/tea.jpg" alt="image" />
+                <br />
+                <div class="preview">
+                  <p class="status ready">available</p>
+                  <p><i data-feather="plus-circle" class="available"></i></p>
+                </div>
                 <br />
                 <p>
                   Quench your thirst with our refreshing Ice Tea, expertly
@@ -196,7 +150,12 @@
             </section>
             <section class="menu-box">
               <div class="content">
-                <img src="assets/Image/matcha.jpg" alt="image" />
+                <img src="/assets/Image/matcha.jpg" alt="image" />
+                <br />
+                <div class="preview">
+                  <p class="status ready">available</p>
+                  <p><i data-feather="plus-circle" class="available"></i></p>
+                </div>
                 <br />
                 <p>
                   Experience the earthy and smooth taste of our Matcha Tea, made
@@ -215,12 +174,10 @@
         <div class="collection-food">
           <div class="title-coll">
             <div>
-              <h1>Our Collection</h1>
+              <h1>Order Now</h1>
               <p>
-                Enjoy a touch of our distinctive coffee taste <br />
-                with a combination of delicious food and fresh drinks <br />
-                in our warm and friendly <br />
-                coffee shop.
+                Place your order now and indulge <br />
+                in culinary bliss !
               </p>
             </div>
             <div>
@@ -233,7 +190,12 @@
           <div class="menu">
             <section class="menu-box">
               <div class="content">
-                <img src="assets/Image/burger.jpg" alt="image" />
+                <img src="/assets/Image/burger.jpg" alt="image" />
+                <br />
+                <div class="preview">
+                  <p class="status ready">available</p>
+                  <p><i data-feather="plus-circle" class="available"></i></p>
+                </div>
                 <br />
                 <p>
                   Dive into our succulent gourmet burger, crafted with premium
@@ -249,7 +211,12 @@
             </section>
             <section class="menu-box">
               <div class="content">
-                <img src="assets/Image/fries.jpg" alt="image" />
+                <img src="/assets/Image/fries.jpg" alt="image" />
+                <br />
+                <div class="preview">
+                  <p class="status ready">available</p>
+                  <p><i data-feather="plus-circle" class="available"></i></p>
+                </div>
                 <br />
                 <p>
                   Indulge in our crispy seasoned fries, seasoned to perfection
@@ -265,7 +232,12 @@
             </section>
             <section class="menu-box">
               <div class="content">
-                <img src="assets/Image/indomie.jpg" alt="image" />
+                <img src="/assets/Image/indomie.jpg" alt="image" />
+                <br />
+                <div class="preview">
+                  <p class="status ready">available</p>
+                  <p><i data-feather="plus-circle" class="available"></i></p>
+                </div>
                 <br />
                 <p>
                   Savor the deliciousness of our signature Indomie, cooked to
@@ -281,7 +253,12 @@
             </section>
             <section class="menu-box">
               <div class="content">
-                <img src="assets/Image/salad.jpg" alt="image" />
+                <img src="/assets/Image/salad.jpg" alt="image" />
+                <br />
+                <div class="preview">
+                  <p class="status sold">sold out</p>
+                  <p><i data-feather="plus-circle" class="out"></i></p>
+                </div>
                 <br />
                 <p>
                   Enjoy the freshness of our garden salad, filled with crisp
@@ -297,7 +274,12 @@
             </section>
             <section class="menu-box">
               <div class="content">
-                <img src="assets/Image/rice.jpg" alt="image" />
+                <img src="/assets/Image/rice.jpg" alt="image" />
+                <br />
+                <div class="preview">
+                  <p class="status ready">available</p>
+                  <p><i data-feather="plus-circle" class="available"></i></p>
+                </div>
                 <br />
                 <p>
                   Savor our savory homemade fried rice, stir-fried with fresh
@@ -313,7 +295,12 @@
             </section>
             <section class="menu-box">
               <div class="content">
-                <img src="assets/Image/chicken.jpg" alt="image" />
+                <img src="/assets/Image/chicken.jpg" alt="image" />
+                <br />
+                <div class="preview">
+                  <p class="status sold">sold out</p>
+                  <p><i data-feather="plus-circle" class="out"></i></p>
+                </div>
                 <br />
                 <p>
                   Enjoy our fragrant jasmine rice bowl, topped with your choice
@@ -349,17 +336,17 @@
             <div class="logo">
               <div>
                 <a href="https://wa.me/6281260244154"
-                  ><img src="assets/Logo/whatsapp.svg" alt="logo"
+                  ><img src="/assets/Logo/whatsapp.svg" alt="logo"
                 /></a>
               </div>
               <div>
                 <a href="https://www.instagram.com/hhmdi_/"
-                  ><img src="assets/Logo/instagram.svg" alt="logo"
+                  ><img src="/assets/Logo/instagram.svg" alt="logo"
                 /></a>
               </div>
               <div>
                 <a href="hamdiharahap2005@gmail.com"
-                  ><img src="assets/Logo/gmail.svg" alt="logo"
+                  ><img src="/assets/Logo/gmail.svg" alt="logo"
                 /></a>
               </div>
             </div>
@@ -379,6 +366,6 @@
       </div>
     </footer>
 
-    <script src="js/main/main.js"></script>
+    <script src="/js/order/main.js"></script>
   </body>
 </html>
