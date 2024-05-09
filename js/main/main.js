@@ -1,4 +1,4 @@
-feather.replace();
+feather.replace()
 
 const dropButton = document.querySelector('.dropdown-btn')
 const dropContent = document.querySelector('.dropdown-content')
@@ -37,7 +37,7 @@ const menuList = document.querySelector('.nav-bar ul')
 const closeIcon = document.querySelector('.close-icon')
 
 menuIcon.addEventListener('click', function () {
-    menuList.classList.toggle('slide-in');
+    menuList.classList.toggle('slide-in')
     menuList.classList.remove('slide');
     menuList.style.visibility = 'visible'
     menuList.style.height = 'auto'
@@ -48,8 +48,8 @@ menuIcon.addEventListener('click', function () {
 })
 
 closeIcon.addEventListener('click', function () {
-    menuList.classList.toggle('slide');
-    menuList.classList.remove('slide-in');
+    menuList.classList.toggle('slide')
+    menuList.classList.remove('slide-in')
     menuList.style.visibility = 'hidden'
     menuIcon.style.visibility = 'visible'
     menuIcon.style.width = 'auto'
@@ -62,13 +62,13 @@ const navigations = document.querySelectorAll('.navigation');
 navigations.forEach((navigation) => {
     navigation.addEventListener('click', function () {
         menuList.classList.toggle('slide');
-        menuList.classList.remove('slide-in');
-        menuIcon.style.visibility = 'visible';
-        menuIcon.style.width = 'auto';
-        closeIcon.style.visibility = 'hidden';
-        closeIcon.style.width = '0'; 
-    });
-});
+        menuList.classList.remove('slide-in')
+        menuIcon.style.visibility = 'visible'
+        menuIcon.style.width = 'auto'
+        closeIcon.style.visibility = 'hidden'
+        closeIcon.style.width = '0'
+    })
+})
 
 const lists = document.querySelectorAll('.list');
 const horizontals = document.querySelectorAll('.hr')
