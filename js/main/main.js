@@ -63,7 +63,6 @@ navigations.forEach((navigation) => {
     navigation.addEventListener('click', function () {
         menuList.classList.toggle('slide');
         menuList.classList.remove('slide-in');
-        manuList.style.visibility = 'hidden'
         menuIcon.style.visibility = 'visible';
         menuIcon.style.width = 'auto';
         closeIcon.style.visibility = 'hidden';
