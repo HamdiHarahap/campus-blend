@@ -111,7 +111,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 9rem 0;
+        padding: 9rem 0 20rem;
         position: fixed;
         z-index: 1;
     }
