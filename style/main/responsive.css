@@ -10,6 +10,7 @@
         margin-bottom: 1rem;
         background-image: url(/assets/Image/bgcoffee.jpg);
         gap: 0;
+        padding: 0;
     }
 
     #home .title h1 {
@@ -54,7 +55,6 @@
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
-        height: 100vh;
         gap: 15px;
     }
 
@@ -108,11 +108,11 @@
         gap: 50px;
         align-items: center;
         background-color: #F0EBE3;
-        border-radius: 20px 0 0 20px;
         display: flex;
         flex-direction: column;
         width: 100%;
         padding: 4rem 0 25rem;
+        position: fixed;
         z-index: 1;
     }
 
@@ -122,11 +122,17 @@
         color: #EAD8C0;
         width: 1.8rem;
         margin-right: 1.5rem;
+        z-index: 2;
     }
 
     #home .menu-icon {
         visibility: visible;
         width: auto;
+    }
+
+    #home .close-icon {
+        color: #000;
+        position: fixed;
     }
 
     #story {
